@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    .container {
+      display: grid;
+      height: 748px;
+      width: 748px;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+    }
+
+    .block {
+      border: 4.5px solid black;
+    }
+
+    .white {
+      background-color: #F0F1EC;
+    }
+
+    #red {
+      background-color: #E72F24;
+      border-top: None;
+      border-left: None;
+    }
+
+    #blue {
+      background-color: #004592;
+      border-right: None;
+      border-bottom: 10px solid black;
+    }
+
+    #yellow {
+      background-color: #F9D01E;
+      border-bottom: None;
+    }
+
+    #black {
+      background-color: #232629;
+      border-bottom: None;
+    }
+
+    #w1 {
+      grid-column: span 3;
+      border-top: None;
+      border-right: None;
+    }
+
+    #w2 {
+      grid-row: span 2;
+      border-left: None;
+    }
+
+    #w3 {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    #w4 {
+      grid-row: span 2;
+      border-top: 10px solid black;
+      border-right: None;
+      border-bottom: None;
+    }
+
+    #w5 {
+      border-bottom: None;
+      border-left: None;
+    }
+    /*
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="block" id="red"></div>
+    <div class="block white" id="w1"></div>
+    <div class="block white" id="w2"></div>
+    <div class="block white" id="w3"></div>
+    <div class="block "id="blue"></div>
+    <div class="block white" id="w4"></div>
+    <div class="block white" id="w5"></div>
+    <div class="block" id="yellow"></div>
+    <div class="block" id="black"></div>
+  </div>
+</body>
+
+</html>
